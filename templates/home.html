@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block title %}Ries ICT Advies | Onafhankelijk over cloudopslag en databeveiliging{% endblock %}
+{% block description %}Onafhankelijk informatieplatform over cloudopslag, back-up en databeveiliging voor Nederlandse ondernemers. Uitleg, vergelijkingen en actueel nieuws.{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Cloudopslag &middot; Databeveiliging &middot; AVG</p>
+    <h1 class="hero-title">Grip op waar de bedrijfsdata staat</h1>
+    <p class="hero-lead">Ries ICT Advies is een onafhankelijk informatieplatform over cloudopslag en databeveiliging. Voor ondernemers die willen weten hoe cloudopslag werkt, welke aanbieders er zijn en hoe data veilig en AVG-proof bewaard wordt.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/cloudopslag/">Cloudopslag vergelijken</a>
+      <a class="btn btn-ghost" href="/nieuws/">Naar het nieuws</a>
+    </div>
+  </div>
+  <div class="hero-grid" aria-hidden="true"></div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Onderwerpen</p>
+      <h2>Wat dit platform behandelt</h2>
+    </div>
+    <div class="topic-grid">
+      <article class="topic">
+        <span class="topic-num">01</span>
+        <h3>Werking van cloudopslag</h3>
+        <p>Uitleg over hoe cloudopslag werkt, het verschil met lokale opslag en wanneer welke vorm het beste past.</p>
+      </article>
+      <article class="topic">
+        <span class="topic-num">02</span>
+        <h3>AVG en privacy</h3>
+        <p>Waar Nederlandse bedrijven op moeten letten bij de opslag van persoonsgegevens en waarom de serverlocatie telt.</p>
+      </article>
+      <article class="topic">
+        <span class="topic-num">03</span>
+        <h3>Back-up en herstel</h3>
+        <p>Beproefde strategieën zoals de 3-2-1-regel om dataverlies te voorkomen en herstel mogelijk te houden.</p>
+      </article>
+      <article class="topic">
+        <span class="topic-num">04</span>
+        <h3>Beveiliging tegen ransomware</h3>
+        <p>Hoe besmettingen ontstaan, waarom het MKB een doelwit is en welke maatregelen de schade beperken.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Aanbevolen</p>
+      <h2>Een AVG-proof startpunt</h2>
+    </div>
+    <div class="callout">
+      <div class="callout-body">
+        <h3>Data binnen Nederland houden</h3>
+        <p>Veel bekende cloudopslagdiensten draaien op servers buiten de Europese Unie. Voor organisaties die met persoonsgegevens werken is dat een aandachtspunt. Een aanbieder met servers in Nederland, zoals Data Opslag Nederland, houdt de data binnen de landsgrenzen en vereenvoudigt de naleving van de AVG. Naast Europese opslag zijn er Nederlandstalige telefonische support en ondersteuning bij datamigratie.</p>
+        <a class="btn btn-primary" href="/cloudopslag/">Bekijk de vergelijking</a>
+      </div>
+      <ul class="callout-list">
+        <li>Servers in Nederland</li>
+        <li>100% AVG-compliant</li>
+        <li>Nederlandstalige support</li>
+        <li>Versiebeheer en herstel</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head section-head-row">
+      <div>
+        <p class="eyebrow">Nieuws</p>
+        <h2>Laatste artikelen</h2>
+      </div>
+      <a class="link-more" href="/nieuws/">Alle artikelen</a>
+    </div>
+    <div class="article-grid">
+      {% for a in latest %}
+      <article class="card">
+        <a href="{{ a.url }}" class="card-link">
+          <span class="card-cat">{{ a.category }}</span>
+          <h3 class="card-title">{{ a.title }}</h3>
+          <p class="card-desc">{{ a.description }}</p>
+          <span class="card-meta">{{ a.date_display }} &middot; {{ a.reading_time }} min lezen</span>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Nieuws | Ries ICT Advies{% endblock %}
+{% block description %}Actuele artikelen over cloudopslag, back-up, databeveiliging en de AVG voor Nederlandse ondernemers.{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Nieuws</p>
+    <h1>Artikelen over cloudopslag en databeveiliging</h1>
+    <p class="page-lead">Informatieve artikelen over de werking van cloudopslag, back-upstrategieën, beveiliging en de regels rond de AVG.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="article-grid article-grid-wide">
+      {% for a in articles %}
+      <article class="card">
+        <a href="{{ a.url }}" class="card-link">
+          <span class="card-cat">{{ a.category }}</span>
+          <h2 class="card-title">{{ a.title }}</h2>
+          <p class="card-desc">{{ a.description }}</p>
+          <span class="card-meta">{{ a.date_display }} &middot; {{ a.reading_time }} min lezen</span>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }} | Ries ICT Advies{% endblock %}
+{% block description %}{{ article.description }}{% endblock %}
+{% block head_extra %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ article.title | tojson }},
+  "description": {{ article.description | tojson }},
+  "datePublished": "{{ article.date_iso }}",
+  "author": { "@type": "Organization", "name": "Ries ICT Advies" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ries ICT Advies",
+    "url": "{{ site.url }}"
+  },
+  "mainEntityOfPage": "{{ site.url }}{{ article.url }}"
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<article class="post">
+  <header class="post-head">
+    <div class="wrap wrap-narrow">
+      <nav class="crumbs" aria-label="Kruimelpad">
+        <a href="/">Home</a> <span aria-hidden="true">/</span>
+        <a href="/nieuws/">Nieuws</a> <span aria-hidden="true">/</span>
+        <span>{{ article.category }}</span>
+      </nav>
+      <span class="post-cat">{{ article.category }}</span>
+      <h1 class="post-title">{{ article.title }}</h1>
+      <p class="post-lead">{{ article.description }}</p>
+      <p class="post-meta">{{ article.date_display }} &middot; {{ article.reading_time }} min lezen</p>
+    </div>
+  </header>
+  <div class="wrap wrap-narrow">
+    <div class="post-body">
+      {{ article.html | safe }}
+    </div>
+  </div>
+</article>
+
+<section class="section section-alt">
+  <div class="wrap wrap-narrow">
+    <div class="section-head">
+      <p class="eyebrow">Verder lezen</p>
+      <h2>Meer over dit onderwerp</h2>
+    </div>
+    <div class="article-grid">
+      {% for a in related %}
+      <article class="card">
+        <a href="{{ a.url }}" class="card-link">
+          <span class="card-cat">{{ a.category }}</span>
+          <h3 class="card-title">{{ a.title }}</h3>
+          <span class="card-meta">{{ a.date_display }} &middot; {{ a.reading_time }} min lezen</span>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

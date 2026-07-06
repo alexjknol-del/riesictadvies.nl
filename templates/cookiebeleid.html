@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Cookiebeleid | Ries ICT Advies{% endblock %}
+{% block description %}Het cookiebeleid van Ries ICT Advies: de website plaatst geen tracking- of statistiekcookies. Toelichting op externe bronnen en technische verwerking.{% endblock %}
+{% block head_extra %}<meta name="robots" content="index, follow">{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="wrap wrap-narrow">
+    <p class="eyebrow">Juridisch</p>
+    <h1>Cookiebeleid</h1>
+    <p class="page-lead">Ries ICT Advies houdt de website eenvoudig en privacyvriendelijk. Er worden geen tracking- of statistiekcookies geplaatst.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap-narrow">
+    <div class="prose legal">
+      <p class="legal-updated">Laatst bijgewerkt: {{ legal_date }}</p>
+
+      <h2>Wat cookies zijn</h2>
+      <p>Cookies zijn kleine tekstbestanden die een website op een apparaat kan opslaan om gegevens te onthouden of het gedrag van bezoekers te volgen. Cookies die het gedrag volgen of statistieken bijhouden, vragen om voorafgaande toestemming.</p>
+
+      <h2>Cookies op deze website</h2>
+      <p>Ries ICT Advies plaatst zelf geen tracking-, marketing- of statistiekcookies. Er wordt geen analysesoftware gebruikt die het gedrag van bezoekers volgt. Een toestemmingsvenster is daarom niet nodig.</p>
+
+      <h2>Externe bronnen</h2>
+      <p>De website laadt een aantal onderdelen vanaf servers van derden. Deze partijen kunnen technische gegevens verwerken die nodig zijn om de inhoud te leveren:</p>
+      <ul>
+        <li><strong>Google Fonts.</strong> De gebruikte lettertypen worden geladen vanaf de servers van Google. Daarbij kan een IP-adres worden verwerkt om het lettertype te kunnen leveren.</li>
+        <li><strong>Cloudflare.</strong> De website wordt geleverd via het netwerk van Cloudflare, dat voor beveiliging en beschikbaarheid technische gegevens zoals een IP-adres kan verwerken.</li>
+      </ul>
+      <p>Deze verwerkingen zijn technisch noodzakelijk voor de werking en weergave van de website en houden geen profielopbouw of gedragsregistratie in.</p>
+
+      <h2>Beheer van cookies in de browser</h2>
+      <p>Iedere browser biedt de mogelijkheid om cookies te bekijken, te beperken of te verwijderen. Die instellingen zijn te vinden in het instellingenmenu van de browser.</p>
+
+      <h2>Wijzigingen</h2>
+      <p>Wanneer de opzet van de website verandert en er wel cookies zouden worden geplaatst, wordt dit beleid aangepast en waar nodig om toestemming gevraagd. De meest actuele versie staat altijd op deze pagina.</p>
+
+      <p>Meer over de omgang met persoonsgegevens staat in het <a href="/privacybeleid/">privacybeleid</a>.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
