@@ -1,7 +1,7 @@
 ---
 title: "Ransomware voorkomen: databeveiliging voor het MKB"
 description: "Hoe ransomware werkt, waarom het MKB een doelwit is en welke maatregelen de kans op besmetting en de schade beperken."
-date: 2025-12-11
+date: 2026-06-02
 category: "Beveiliging"
 reading_time: 6
 ---

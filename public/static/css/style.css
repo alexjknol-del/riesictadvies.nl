@@ -200,6 +200,9 @@ img { max-width: 100%; height: auto; }
 }
 .callout-body h3 { color: #fff; font-size: 1.6rem; margin: 0 0 14px; }
 .callout-body p { color: #c3ced9; margin: 0 0 26px; }
+.callout-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+.callout .btn-ghost { color: #eef2f6; border-color: rgba(255,255,255,.35); }
+.callout .btn-ghost:hover { background: rgba(255,255,255,.08); color: #fff; }
 .callout-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 .callout-list li { position: relative; padding-left: 26px; font-family: var(--font-mono); font-size: 13.5px; letter-spacing: .02em; color: #eef2f6; }
 .callout-list li::before {

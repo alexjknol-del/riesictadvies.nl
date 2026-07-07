@@ -1,7 +1,7 @@
 ---
 title: "AVG-compliant data opslaan: waar Nederlandse bedrijven op moeten letten"
 description: "Wat de AVG betekent voor de opslag van bedrijfsdata in de cloud, waarom de locatie van de servers telt en hoe een organisatie naleving borgt."
-date: 2025-11-25
+date: 2026-02-18
 category: "Wetgeving"
 reading_time: 6
 ---

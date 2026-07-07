@@ -1,7 +1,7 @@
 ---
 title: "Cloudopslagdiensten vergelijken: de bekende aanbieders op een rij"
 description: "Een overzicht van veelgebruikte cloudopslagdiensten zoals Google Drive, OneDrive, pCloud, Mega en Dropbox, met de eigenschappen die voor een zakelijke keuze tellen."
-date: 2025-12-30
+date: 2026-07-03
 category: "Vergelijking"
 reading_time: 7
 ---

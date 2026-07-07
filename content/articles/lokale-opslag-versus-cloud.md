@@ -1,7 +1,7 @@
 ---
 title: "Lokale opslag of cloudopslag: de afwegingen"
 description: "Een nuchtere vergelijking tussen opslag op eigen hardware en opslag in de cloud, met de voor- en nadelen per situatie."
-date: 2025-12-18
+date: 2026-04-28
 category: "Basiskennis"
 reading_time: 5
 ---

@@ -1,7 +1,7 @@
 ---
 title: "De 3-2-1 back-upregel uitgelegd"
 description: "Een beproefde vuistregel voor betrouwbare back-ups: drie kopieën, twee media, één op afstand. Wat de regel inhoudt en hoe de cloud erin past."
-date: 2025-12-03
+date: 2026-03-24
 category: "Back-up"
 reading_time: 5
 ---

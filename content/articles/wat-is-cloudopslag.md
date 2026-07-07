@@ -1,7 +1,7 @@
 ---
 title: "Wat is cloudopslag en hoe werkt het?"
 description: "Uitleg over de werking van cloudopslag, het verschil met lokale opslag en de voordelen voor ondernemers die bedrijfsdata veilig willen bewaren."
-date: 2025-11-18
+date: 2026-01-14
 category: "Basiskennis"
 reading_time: 5
 ---
