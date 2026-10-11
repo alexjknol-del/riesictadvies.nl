@@ -16,6 +16,8 @@ De AVG vraagt passende maatregelen om persoonsgegevens te beschermen, ongeacht o
 
 De basis is een eenvoudig register. Elk item krijgt een uniek nummer, met daarbij wat het is, waar het staat, wie verantwoordelijk is en hoe lang het bewaard moet worden. Dat geldt voor archiefdozen en mappen, maar ook voor laptops, externe schijven en netwerkapparatuur. Het nummer komt als barcode op het item en op de plank of kast waar het hoort.
 
+Voor een kleine organisatie volstaat vaak een spreadsheet als register. Wie daar meer uit wil halen met filters, draaitabellen en gegevensvalidatie, leert dat bijvoorbeeld via een [Cursus Excel van X-cel.nl](https://www.x-cel.nl/excel-cursus/).
+
 Met een scanner of een telefoon-app is bij elke verplaatsing vast te leggen waar een item naartoe gaat. Een uitgeleende laptop, een schijf die naar een externe locatie gaat of een doos die naar de vernietiging gaat: het register laat zien waar het item is en wie het als laatste had.
 
 ## Welke barcode en wat erop staat
