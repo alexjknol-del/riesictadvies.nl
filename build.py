@@ -125,6 +125,9 @@ def build():
     # cloudopslag
     write("/cloudopslag/", render("cloudopslag.html", "/cloudopslag/", "/cloudopslag/"))
 
+    # partners
+    write("/partners/", render("partners.html", "/partners/", None))
+
     # contact
     write("/contact/", render("contact.html", "/contact/", "/contact/"))
 
@@ -150,7 +153,7 @@ def build():
 
 
 def write_sitemap(articles):
-    urls = ["/", "/over/", "/cloudopslag/", "/nieuws/", "/contact/",
+    urls = ["/", "/over/", "/cloudopslag/", "/nieuws/", "/contact/", "/partners/",
             "/privacybeleid/", "/cookiebeleid/"]
     urls += [a["url"] for a in articles]
     today = date.today().isoformat()
